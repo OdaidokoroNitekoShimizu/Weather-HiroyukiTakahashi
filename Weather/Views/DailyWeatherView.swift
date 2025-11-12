@@ -52,6 +52,15 @@ struct DailyWeatherView: View {
                                 Text("%")
                             }
                             .font(.subheadline)
+
+                          
+
+                            Image("\(forecastDay.astro.tukinomitikake)")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+//                            Text(forecastDay.astro.tukinomitikake)
+
                         }
                         .padding()
                         .frame(width: ScreenInfo.width / 2, height: ScreenInfo.height / 3)
@@ -92,6 +101,11 @@ struct DailyWeatherView: View {
                                 Text("〇〇")  // 数字が入る
                                 Text("%")
                             }
+
+                            Image(systemName: "moon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 64, height: 64)
                         }
                         .padding()
                         .frame(width: ScreenInfo.width / 2, height: ScreenInfo.height / 3)

@@ -32,6 +32,7 @@ class WeatherViewModel: ObservableObject {
             "q": "\(lat),\(lon)",//緯度軽度
             "days": "3",//予報を取得する日数、3日分
             "lang": "ja"//天気の概況を日本語で
+            
         ]
 
         AF.request(url, method: .get,parameters: parameters)
